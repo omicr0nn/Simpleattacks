@@ -29,30 +29,33 @@ def main():
 	
 if __name__ == "__main__":
     rainbow_text("Coding by omicr0n")
+    
+rainbow_text1 = ("\033[31mc\033[91mo\033[93md\033[92mi\033[34mn\033[95mg \033[35mb\033[31my \033[91mo\033[93mm\033[92mi\033[34mc\033[95mr\033[35m0\033[31mn")
+
 
 os.system("apt-get install figlet")
 os.system("clear")
-os.system("figlet Kaba Kuvvet")
-print("""
-Kaba Kuvvet  Programına Hoş Geldiniz. 
+os.system("figlet BruteForce")
+print(f"""
+\033[35mBruteForce Programına Hoş Geldiniz. \033[94m//\033[0m {rainbow_text1}
 
-1) FTP
-2) SSH
-3) Telnet
-4) HTTP
-5) SMB
-6) RDP
-7) VNC
-8) SIP
-9) Redis
-10) PostgreSQL
-11)MySQL
+\033[94m1) FTP       
+\033[32m2) SSH
+\033[31m3) Telnet
+\033[94m4) HTTP
+\033[32m5) SMB
+\033[31m6) RDP
+\033[94m7) VNC
+\033[32m8) SIP
+\033[31m9) Redis
+\033[94m10) PostgreSQL
+\033[32m11)MySQL \033[0m
 """)
 
-islemno = input("İşlem No Girin: ")
-hedefip = input("Hedef İp Girin: ")
-kullaniciadi = input("Kullanıcı Adı Dosya Yolu: ")
-sifre = input("Sifrelerin Bulunduğu Dosya Yolu: ")
+islemno = input("\033[94mİşlem No Girin: \033[0m")
+hedefip = input("\033[31mHedef İp Girin: \033[0m")
+kullaniciadi = input("\033[32mKullanıcı Adı Dosya Yolu: \033[0m")
+sifre = input("\033[32mSifrelerin Bulunduğu Dosya Yolu: \033[0m")
 
 if(islemno == "1"):
 	os.system("ncrack -p 21 -U " + kullaniciadi + " -P " + sifre + " " + hedefip)
