@@ -9,7 +9,7 @@ git clone https://github.com/omicr0nn/Simpleattacks
 cd Simpleattacks
 ```
 ```bash
-python !file name!
+python <file_name>
 ```
 
 # With ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
